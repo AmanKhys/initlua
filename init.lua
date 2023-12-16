@@ -170,7 +170,7 @@ require('lazy').setup({
     lazy = false,
     opts = {},
     priority = 10000,
-    config = function ()
+    config = function()
       vim.cmd.colorscheme 'tokyonight-night'
     end
   },
@@ -179,7 +179,7 @@ require('lazy').setup({
     lazy = false,
     opts = {},
     priority = 100,
-    config = function ()
+    config = function()
       vim.cmd.colorscheme 'kanagawa-wave'
     end
   },
@@ -196,16 +196,9 @@ require('lazy').setup({
       },
     },
   },
-
-  {
-    -- Add indentation guides even on blank lines
-    'lukas-reineke/indent-blankline.nvim',
-    -- Enable `lukas-reineke/indent-blankline.nvim`
-    -- See `:help indent_blankline.txt`
+  { "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
-    opts = {
-      IblIndent = { cterm = "NONE", ctermfg = "DarkGray", guifg = "DarkGray" },
-    },
+    opts = {}
   },
 
   -- "gc" to comment visual regions/lines
